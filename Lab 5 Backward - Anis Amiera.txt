@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main(void)
+{
+         int index;
+         char myName[36];
+
+         cout << "Please enter name: ";
+         cin.getline(myName, 36);
+
+         for (index = strlen(myName) - 1; index >= 0; --index)
+               {
+               cout << myName[index];
+               }
+         cout << endl;
+ 
+ 
+         return 0;
+}
