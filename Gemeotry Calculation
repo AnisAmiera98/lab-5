@@ -1,0 +1,47 @@
+// Example program
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+int main()
+{
+	float x, y, r, area, base, height;
+	int choice;
+	cout << "Geometry Calculator\n";
+	cout << "1. Calculate the Area of a Circle\n";
+	cout << "2. Calculate the Area of a Rectangle\n";
+	cout << "3. Calculate the Area of a Triangle\n";
+	cout << "4. Quit ";
+	cin >> choice;
+
+	switch (choice)
+	{
+		case 1 :
+			cout << "Enter the radius of the circle: \n";
+			cin >> r;
+			area = 3.14159 * r * r;
+			cout << " The area of circle is "<< area;
+			break;
+
+		case 2 :
+			cout << "Enter the length and width of rectangle: \n";
+			cin >> x >> y;
+			area = x * y;
+			cout << " The area of rectangle is "<< area;
+			break;
+
+		case 3 :
+			cout << "Enter the length triangle's base and height: \n";
+			cin >> base >> height;
+			area = base * height * 0.5;
+		    cout << " The area of trianlge is "<< area;
+			break;
+	
+	
+	    default : cout << " The program is wrong! ";
+	    break;
+	}
+	return 0 ;
+
+}
